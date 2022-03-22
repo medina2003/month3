@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/strokedittxt"
+        android:drawableStart="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/strokedittxt"
+        android:drawableStart="@drawable/ic_notes"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/editText1" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/borderfile"
+        android:drawableStart="@drawable/ic_sms"
+        android:inputType="text"
+        android:padding="10dp"
+        android:paddingStart="5dp"
+        app:layout_constraintTop_toBottomOf="@id/editText2" />
+
+    <Button
+
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginBottom="150dp"
+        android:text="Sign up"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
